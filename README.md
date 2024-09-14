@@ -1,3 +1,5 @@
+<img src="appendix/icon.webp" width=100 height="auto">
+
 # Auto Data Cleaning and Reporting Tool
 
 This tool is designed for **data preparation** as an initial step for more complex and in-depth data cleaning and validation processes. It simplifies the cleaning process, ensuring that datasets are ready for further analysis or machine learning workflows. The tool provides two options for processing: **Pandas** for small to medium datasets and **PySpark** for large-scale datasets and distributed environments.
@@ -21,7 +23,9 @@ This tool is designed for **data preparation** as an initial step for more compl
   - Visualizations including heatmaps for missing values, column distribution, boxplots for outliers, and correlation heatmaps.
   - Full reporting on nonconforming cells and process times.
   - A downloadable cleaned CSV file.
-  
+
+<img src="appendix/flow.png" width=450 height="auto">
+
 ## Requirements
 
 - **Python 3.9+**
