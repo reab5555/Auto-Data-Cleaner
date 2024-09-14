@@ -4,7 +4,7 @@
 
 This tool is designed for **data preparation** as an initial step for more complex and in-depth data cleaning and validation processes. It simplifies the cleaning process, ensuring that datasets are ready for further analysis or machine learning workflows.   
 
-There are two options for processing: **Pandas** for small to medium datasets and **Spark** for large-scale datasets and distributed environments.
+There are two options for processing: **Pandas** for small to medium datasets and **Spark** for large-scale datasets and distributed clustered computation environments.
 
 <img src="appendix/flow.svg" width=450 height="auto">
 
