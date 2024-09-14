@@ -155,8 +155,6 @@ def clean_column(df, column_name):
     column_type = df.schema[column_name].dataType
 
     if isinstance(column_type, StringType):
-        # Skip date detection and directly process as string
-        # For string columns, check for typos and transform
         typos_df = check_typos(df, column_name)
         if typos_df is not None and typos_df.count() > 0:
             print(f"Detailed typos for column {column_name}:")
@@ -170,9 +168,6 @@ def clean_column(df, column_name):
     end_time = perf_counter()
     print(f"Time taken to clean {column_name}: {end_time - start_time:.6f} seconds")
     return df
-
-
-
 
 # Update the remove_outliers function to work on a single column
 def remove_outliers(df, column):
@@ -188,14 +183,12 @@ def remove_outliers(df, column):
 
     return df
 
-
 def calculate_nonconforming_cells(df):
     nonconforming_cells = {}
     for column in df.columns:
         nonconforming_count = df.filter(col(column).isNull() | isnan(column)).count()
         nonconforming_cells[column] = nonconforming_count
     return nonconforming_cells
-
 
 def get_numeric_columns(df):
     return [field.name for field in df.schema.fields if isinstance(field.dataType, (IntegerType, DoubleType))]
