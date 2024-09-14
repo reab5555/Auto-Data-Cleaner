@@ -6,6 +6,8 @@ This tool is designed for **data preparation** as an initial step for more compl
 
 There are two options for processing: **Pandas** for small to medium datasets and **Spark** for large-scale datasets and distributed clustered computation environments.
 
+[App](https://huggingface.co/spaces/reab5555/Data-Cleaner)
+
 <img src="appendix/flow.svg" width=450 height="auto">
 
 ## Features
