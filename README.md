@@ -24,7 +24,7 @@ This tool is designed for **data preparation** as an initial step for more compl
   
 ## Requirements
 
-- **Python 3.8+**
+- **Python 3.9+**
 - **Dependencies**: Install all dependencies via pip:
 
   ```bash
